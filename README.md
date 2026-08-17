@@ -1,0 +1,2 @@
+# Calculator
+A a playful vanilla JavaScript calculator with a neon arcade design, pixel-art beach display, otter-viking background, musical button sounds, seagull ambience, animated fireworks, and a dramatic nuclear alert effect.
