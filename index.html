@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <title>Calculator 3000</title>
+    <meta
+      name="description"
+      content="Calculator 3000 — a loud, neon-drenched calculator built on Replit."
+    />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Pirata+One&family=Rye&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript
+      ><link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Pirata+One&family=Rye&display=swap"
+        rel="stylesheet"
+    /></noscript>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="home">
+      <div class="page-bg"></div>
+
+      <div class="content">
+        <h1 class="title">Calculator 3000</h1>
+
+        <div class="calculator">
+          <div class="screen">
+            <div class="screen-bg"></div>
+            <div class="screen-overlay"></div>
+            <div class="scanlines"></div>
+            <div class="previous-value"></div>
+            <div class="current-value">0</div>
+          </div>
+
+          <div class="keypad">
+            <button
+              data-id="clear"
+              data-variant="aux"
+              class="btn"
+              type="button"
+            >
+              AC
+            </button>
+            <button
+              data-id="fireworks"
+              data-variant="aux"
+              class="btn effect-button"
+              type="button"
+              aria-label="Launch fireworks"
+              title="Launch fireworks"
+            >
+              🎆
+            </button>
+            <button
+              data-id="nuclear"
+              data-variant="aux"
+              class="btn effect-button"
+              type="button"
+              aria-label="Trigger nuclear blast"
+              title="Trigger nuclear blast"
+            >
+              ☢
+            </button>
+            <button
+              data-id="÷"
+              data-variant="operator"
+              data-op="÷"
+              class="btn"
+              type="button"
+            >
+              ÷
+            </button>
+
+            <button data-id="7" data-variant="digit" class="btn" type="button">
+              7
+            </button>
+            <button data-id="8" data-variant="digit" class="btn" type="button">
+              8
+            </button>
+            <button data-id="9" data-variant="digit" class="btn" type="button">
+              9
+            </button>
+            <button
+              data-id="×"
+              data-variant="operator"
+              data-op="×"
+              class="btn"
+              type="button"
+            >
+              ×
+            </button>
+
+            <button data-id="4" data-variant="digit" class="btn" type="button">
+              4
+            </button>
+            <button data-id="5" data-variant="digit" class="btn" type="button">
+              5
+            </button>
+            <button data-id="6" data-variant="digit" class="btn" type="button">
+              6
+            </button>
+            <button
+              data-id="-"
+              data-variant="operator"
+              data-op="-"
+              class="btn"
+              type="button"
+            >
+              -
+            </button>
+
+            <button data-id="1" data-variant="digit" class="btn" type="button">
+              1
+            </button>
+            <button data-id="2" data-variant="digit" class="btn" type="button">
+              2
+            </button>
+            <button data-id="3" data-variant="digit" class="btn" type="button">
+              3
+            </button>
+            <button
+              data-id="+"
+              data-variant="operator"
+              data-op="+"
+              class="btn"
+              type="button"
+            >
+              +
+            </button>
+
+            <button
+              data-id="0"
+              data-variant="digit"
+              class="btn col-span-2"
+              type="button"
+            >
+              0
+            </button>
+            <button data-id="." data-variant="digit" class="btn" type="button">
+              .
+            </button>
+            <button
+              data-id="="
+              data-variant="operator"
+              class="btn"
+              type="button"
+            >
+              =
+            </button>
+          </div>
+        </div>
+
+        <audio class="opening-audio" aria-hidden="true" preload="none"></audio>
+      </div>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
